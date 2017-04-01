@@ -81,7 +81,7 @@ function timeStuff(timeIn, freq){
 	if(next.hours()/12 > 1){
 		out1 = next.hours()%12 + ":" + out1 + " pm";
 	} else if (next.hours() === 0){
-		out1 = "00:" + out1 + " am"; 
+		out1 = "12:" + out1 + " am"; 
 	} else {
 		out1 = next.hours() + ":" + out1 + " am";
 	}
