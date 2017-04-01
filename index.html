@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Train Scheduler</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1>Anytime is Train Time</h1>
+        <h3>Choo Choo. Chee Chee.</h3>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+            <table class="table" id="train-table">
+	            <thead id="table-head">
+	            	<tr>
+	            		<th>Train Name</th>
+	            		<th>Destination</th>
+		           		<th>Frequency (min)</th>
+	            		<th>Next Arrival</th>
+	            		<th>Minutes Away</th>
+	            	</tr>
+	        	</thead>
+	            <tbody id="table-body">
+	        	</tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="name-input">Train Name</label>
+                    <input type="text" id="name-input" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="desination-input">Destination</label>
+                    <input type="text" id="destination-input" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="first-time-input">First Train Time (HH:mm - military time)</label>
+                    <input type="text" id="first-time-input" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="frequency-input">Frequency (min)</label>
+                    <input type="text" id="frequency-input" class="form-control">
+                </div>
+                <div class="form-group">
+              		<button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+              	</div>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+
+</html>
